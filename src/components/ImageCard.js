@@ -1,16 +1,13 @@
-import React from 'react';
+import React from "react";
 
 const ImageCard = ({ image }) => {
-
-  const tags = image.tags.split(',');
+  const tags = image.tags.split(",");
 
   return (
     <div className="card-container">
       <img src={image.webformatURL} alt="images" />
       <div className="labels">
-        <div className="label-content">
-          Photo by {image.user}
-        </div>
+        <div className="label-content">Photo by {image.user}</div>
         <ul>
           <li>
             <strong>Views:</strong> {image.views}
@@ -25,13 +22,11 @@ const ImageCard = ({ image }) => {
       </div>
       <div className="tags">
         {tags.map((tag, index) => {
-            return (
-              <span key={index}>#{tag}</span>
-            )
+          return <span key={index}>#{tag}</span>;
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ImageCard
+export default ImageCard;

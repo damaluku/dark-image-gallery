@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-      <div className="container">
+      <main className="container">
         <ImageSearch searchText={(text) => setTerm(text)} />
 
         {!isLoading && images.length === 0 && <h1>No images found</h1>}
@@ -40,7 +40,7 @@ function App() {
             })}
           </div>
         )}
-      </div>
+      </main>
     </>
   );
 }
