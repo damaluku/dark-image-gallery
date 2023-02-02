@@ -9,6 +9,7 @@ const ImageCard = ({ collection }) => {
       <ImageContainer>
         <img src={collection.webformatURL} alt={collection.user} />
       </ImageContainer>
+
       <CardDetails>
         <span>Photo by {collection.user}</span>
         <ul>
